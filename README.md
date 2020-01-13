@@ -4,6 +4,17 @@ Low-level Lua convenience wrapper for IPC shared memory functionality.
 Wraps calls to mmap/munmap to create and free shared memory, and
 memset/memcpy calls to write and clear the shared memory area.
 
+## Installation
+
+```
+$ luarocks install lua-shmem
+```
+
+From source:
+```
+$ gcc -shared -o shmem.o src/shmem.c -llua
+```
+
 ## Example
 
 ```lua
